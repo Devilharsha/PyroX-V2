@@ -13,7 +13,7 @@ def load_plugin_help():
             spec = importlib.util.spec_from_file_location("module.name", plugin_path)
             plugin_module = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(plugin_module)
-            help_texts[plugin_module.__mod_name__] = plugin_module.__help__
+            help_texts[plugin_module.__mod_name__] = plugin_module.__file__
     return help_texts
 
 # Function to handle .help command, just an example
