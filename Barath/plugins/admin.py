@@ -147,7 +147,7 @@ async def purge(_, message):
 __mod_name__ = "ADMIN"  
     
 __help__ = """  
-- promote: promote a member
+- promote: promote a member by ub
 - fpromote: full promote a member
 - demote: demote a member
 - admins: to get admin list
